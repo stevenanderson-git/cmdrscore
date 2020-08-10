@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <!--Page Data-->
+  <head>
+    <title>EDH Scoreboard</title>
+    <!--Make page mobile friendly-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style type="text/css">
+        #mainHeader {
+            text-align: center;
+            background-color: black;
+            color: aquamarine;
+            padding: 10px;
+        }
+
+        #mainFooter {
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        #scoreSubmit {
+          font-size:18px;
+          background-color: green;
+          color: gold;
+        }
+        
+        .score-form-container {
+          text-align: center;
+        }
+        
+        ul{
+          list-style-type: none;
+        }
+        
+    </style>
+  </head>
+  
+  <!--Page Contents-->
+  <body>
+    <!--Main Header-->
+    <header id="mainHeader">
+      <h3>EDH Scoreboard</h3>
+      <h4>Newgame Screen</h4>
+    </header>
+    <br>
+    <!--Data submission form-->
+    <div class="score-form-container">
+    <form action="index.html">
+      <!--Player/Deck add section-->
+      <section id="playerRegister">
+        <div>
+          <label for="">Player</label>
+          <input type="text" name="player1" placeholder="player1">
+          <label for="">Commander</label>
+          <input type="text" name="commander" placeholder="Squee">
+        </div>
+        <br>
+        <div>
+          <label for="">Player</label>
+          <input type="text" name="player2" placeholder="player2">
+          <label for="">Commander</label>
+          <input type="text" name="commander" placeholder="Squee">
+        </div><br>
+        <div>
+          <label for="">Player</label>
+          <input type="text" name="player3" placeholder="player3">
+          <label for="">Commander</label>
+          <input type="text" name="commander" placeholder="Squee">
+        </div><br>
+        <div>
+          <label for="">Player</label>
+          <input type="text" name="player4" placeholder="player4">
+          <label for="">Commander</label>
+          <input type="text" name="commander" placeholder="Squee">
+        </div><br><hr>
+      </section>
+      <!--Score Section-->
+      <section id="scoreForm">
+        <ul>
+        <li>
+          <label>First (+4)</label>
+          <div>
+            <input type="radio" id="Calvin" name="first" value="Calvin"><label for="Calvin">Calvin</label>
+            <input type="radio" id="Niki" name="first" value="Niki"><label for="Niki">Niki</label>
+            <input type="radio" id="Shane" name="first" value="Shane"><label for="Shane">Shane</label>
+            <input type="radio" id="Steven" name="first" value="Steven"><label for="Steven">Steven</label>
+          </div>
+        </li>
+        <br>
+        
+        <li>
+          <label>Second (+3)</label>
+          <div>
+            <input type="radio" id="Calvin" name="second" value="Calvin"><label for="Calvin">Calvin</label>
+            <input type="radio" id="Niki" name="second" value="Niki"><label for="Niki">Niki</label>
+            <input type="radio" id="Shane" name="second" value="Shane"><label for="Shane">Shane</label>
+            <input type="radio" id="Steven" name="second" value="Steven"><label for="Steven">Steven</label>
+          </div>
+        </li>
+        <br>
+        
+        <li>
+          <label>Third (+2)</label>
+          <div>
+            <input type="radio" id="Calvin" name="third" value="Calvin"><label for="Calvin">Calvin</label>
+            <input type="radio" id="Niki" name="third" value="Niki"><label for="Niki">Niki</label>
+            <input type="radio" id="Shane" name="third" value="Shane"><label for="Shane">Shane</label>
+            <input type="radio" id="Steven" name="third" value="Steven"><label for="Steven">Steven</label>
+          </div>
+        </li>
+        <br>
+        
+        <li>
+          <label>Last (+1)</label>
+          <div>
+            <input type="radio" id="Calvin" name="last" value="Calvin"><label for="Calvin">Calvin</label>
+            <input type="radio" id="Niki" name="last" value="Niki"><label for="Niki">Niki</label>
+            <input type="radio" id="Shane" name="last" value="Shane"><label for="Shane">Shane</label>
+            <input type="radio" id="Steven" name="last" value="Steven"><label for="Steven">Steven</label>
+          </div>
+        </li>
+        <br>
+        
+        <li>
+          <label>Firstblood (+1)</label>
+          <div>
+            <input type="radio" id="Calvin" name="firstblood" value="Calvin"><label for="Calvin">Calvin</label>
+            <input type="radio" id="Niki" name="firstblood" value="Niki"><label for="Niki">Niki</label>
+            <input type="radio" id="Shane" name="firstblood" value="Shane"><label for="Shane">Shane</label>
+            <input type="radio" id="Steven" name="firstblood" value="Steven"><label for="Steven">Steven</label>
+          </div>
+        </li>
+        <br>
+        
+        <li>
+          <label>Tablekill/Infinite (-1)</label>
+          <div>
+            <input type="radio" id="Calvin" name="tablekill" value="Calvin"><label for="Calvin">Calvin</label>
+            <input type="radio" id="Niki" name="tablekill" value="Niki"><label for="Niki">Niki</label>
+            <input type="radio" id="Shane" name="tablekill" value="Shane"><label for="Shane">Shane</label>
+            <input type="radio" id="Steven" name="tablekill" value="Steven"><label for="Steven">Steven</label>
+          </div>
+        </li>
+        <br>
+        
+        <li>
+          <label>Long Search [1 min] (-1)</label>
+          <div>
+            <input type="checkbox" name="longsearch" value="Calvin"><label for="Calvin">Calvin</label>
+            <input type="checkbox" name="longsearch" value="Niki"><label for="Niki">Niki</label>
+            <input type="checkbox" name="longsearch" value="Shane"><label for="Shane">Shane</label>
+            <input type="checkbox" name="longsearch" value="Steven"><label for="Steven">Steven</label>
+          </div>
+        </li>
+        <br>
+        
+        <li>
+          <label>Fail to Command (-1)</label>
+          <div>
+            <input type="checkbox" name="cmdFail" value="Calvin"><label for="Calvin">Calvin</label>
+            <input type="checkbox" name="cmdFail" value="Niki"><label for="Calvin">Niki</label>
+            <input type="checkbox" name="cmdFail" value="Shane"><label for="Calvin">Shane</label>
+            <input type="checkbox" name="cmdFail" value="Steven"><label for="Calvin">Steven</label>
+          </div>
+        </li>
+        
+        </ul>
+      </section>
+      
+      
+      <input type="submit" value="Calculate" id="scoreSubmit">
+    </form>
+    </div>
+    
+    <hr>
+    
+    <!--Main Footer-->
+    <footer id="mainFooter">
+        <p>Copyright &copy; 2020, Steven Anderson</p>
+    </footer>
+  </body>
+  
+  
+  
+  
+</html>
