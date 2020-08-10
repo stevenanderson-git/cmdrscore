@@ -1,0 +1,2 @@
+1:59 PM 8/10/2020 .gitignore no longer blocks /images to work between computers
+
